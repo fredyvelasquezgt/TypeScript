@@ -1,4 +1,3 @@
 
-const msg:string  = 'hola mundo';
+const msg = 'hola mundo';
 console.log(msg)
-debug
