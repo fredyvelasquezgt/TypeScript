@@ -1,6 +1,6 @@
 (() => {
 
-    let avenger;
+    let avenger: number;
     console.log(avenger)
 
     const villians:number = 20;
@@ -11,5 +11,7 @@
         console.log('nos salvamos')
     }
 
+    avenger = Number('55');
+    console.log({avenger})
 
 })()
