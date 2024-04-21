@@ -1,7 +1,9 @@
 (() => {
 
-    const batman = 'batman';
-    const greenLantern = "Green's Lantern"
+    const batman:string = 'batman';
+    const greenLantern:string = "Green's Lantern"
+    const volcanNegro:string = `Heroe: Volcan Negro`;
+    
 
 
 })()
