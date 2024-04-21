@@ -1,3 +1,7 @@
 
-const msg:string = 'hola mundo';
-console.log(msg)
+const hero = {
+    name: 'IRONMAN',
+    age: 10
+}
+
+console.log(hero)
