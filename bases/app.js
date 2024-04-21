@@ -1,6 +1,3 @@
 "use strict";
-const hero = {
-    name: 'IRONMAN',
-    age: 10
-};
-console.log(hero);
+const a = 10;
+let b = 10;
