@@ -1,8 +1,10 @@
 "use strict";
 (() => {
     function callBatman() {
-        return 1;
+        return;
     }
+    const callSuperman = () => {
+    };
     const a = callBatman();
     console.log(a);
 })();

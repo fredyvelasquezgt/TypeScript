@@ -1,8 +1,13 @@
 (() => {
 
     function callBatman():void {
-        return 1;
+        return;
     }
+
+    const callSuperman = ():void => {
+
+    }
+
 
     const a = callBatman()
     console.log(a)
