@@ -8,7 +8,4 @@
     villians.forEach(v => console.log(v.toUpperCase()))
 
 
-
-
-
 })()
