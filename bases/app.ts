@@ -15,11 +15,16 @@
   
     //Enumeraciones
     enum PoderesHeroes {
-      fuerzaAcuaman = 0,
-      fuerzaBatman = 1,
-      fuerzaFlash = 5,
-      fuerzaSuperman = 100
+      acuaman = 0,
+      batman = 1,
+      flash = 5,
+      superman = 100
     }
+
+      const fuerzaAcuaman: PoderesHeroes = PoderesHeroes.acuaman;
+      const fuerzaBatman: PoderesHeroes = PoderesHeroes.batman;
+      const fuerzaFlash: PoderesHeroes = PoderesHeroes.flash;
+      const fuerzaSuperman: PoderesHeroes = PoderesHeroes.superman;
 
     // Retorno de funciones
     function activar_batiseñal():string{
@@ -31,8 +36,8 @@
     }
   
     // Aserciones de Tipo
-    const poder: string = '100';
-    const largoDelPoder:number = Number(poder.length);
+    const poder: any = '100';
+    const largoDelPoder:number = (poder as string).length;
     console.log( largoDelPoder );
   
   
