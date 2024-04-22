@@ -1,7 +1,11 @@
 (() => {
 
     const error = (message:string):never => {
-        throw new Error(message)
+        
+        if(false) {
+            throw new Error(message)
+
+        }
     }
 
     error('help!')

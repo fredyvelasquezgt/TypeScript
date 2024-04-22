@@ -1,7 +1,9 @@
 "use strict";
 (() => {
     const error = (message) => {
-        throw new Error(message);
+        if (false) {
+            throw new Error(message);
+        }
     };
     error('help!');
 })();
