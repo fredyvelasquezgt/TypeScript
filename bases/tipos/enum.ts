@@ -1,5 +1,14 @@
 (() => {
 
-    let audiolevel = 3;
+    enum AudioLevel {
+        min,
+        medium,
+        max
+    }
+
+    let currrentAudio = AudioLevel.medium;
+
+    console.log(currrentAudio)
+    console.log(AudioLevel)
 
 })()
