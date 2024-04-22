@@ -10,5 +10,9 @@
         return 'batisignal activate';
     }
 
-    console.log(typeOf())
+
+    // const heroName = () => {
+    //     re
+    // }
+
 })()
