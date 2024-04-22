@@ -1,8 +1,8 @@
 "use strict";
 (() => {
     const fullName = (firstName, lastName) => {
-        return `${firstName} ${lastName}`;
+        return `${firstName} ${lastName || 'no last name'}`;
     };
-    const name = fullName('Tony', 'Stark');
+    const name = fullName('Tony');
     console.log({ name });
 })();
