@@ -14,24 +14,25 @@
     const aliados: string[] = ['Mujer Maravilla','Acuaman','San', 'Flash'];
   
     //Enumeraciones
-    
-    const fuerzaFlash = 5;
-    const fuerzaSuperman = 100;
-    const fuerzaBatman = 1;
-    const fuerzaAcuaman = 0;
-  
+    enum PoderesHeroes {
+      fuerzaAcuaman = 0,
+      fuerzaBatman = 1,
+      fuerzaFlash = 5,
+      fuerzaSuperman = 100
+    }
+
     // Retorno de funciones
-    function activar_batiseñal(){
+    function activar_batiseñal():string{
       return 'activada';
     }
   
-    function pedir_ayuda(){
+    function pedir_ayuda():void{
       console.log('Auxilio!!!');
     }
   
     // Aserciones de Tipo
-    const poder: any = '100';
-    const largoDelPoder:number = poder.length;
+    const poder: string = '100';
+    const largoDelPoder:number = Number(poder.length);
     console.log( largoDelPoder );
   
   
