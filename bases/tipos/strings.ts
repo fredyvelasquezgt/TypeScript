@@ -6,7 +6,6 @@
 
     console.log(batman.toLowerCase());
     console.log(`I'm ${greenLantern}`);
+    console.log(batman[10]?.toUpperCase() || 'no esta presente')
     
-
-
 })()
