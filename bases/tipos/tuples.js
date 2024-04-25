@@ -4,3 +4,4 @@
     hero[0] = 50;
     hero[1] = 'Iron Man';
 })();
+//# sourceMappingURL=tuples.js.map
