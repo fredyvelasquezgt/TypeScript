@@ -29,8 +29,6 @@ const villanos = [{
         edad: undefined,
         mutante: true
     }];
-// Multiples tipos
-// cree dos tipos, uno para charles y otro para apocalipsis
 const charles = {
     poder: "psiquico",
     estatura: 1.78
@@ -40,6 +38,9 @@ const apocalipsis = {
     miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
 };
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique;
+let mystique = {
+    lider: false,
+    miembros: ['Juan', 'Fredy']
+};
 mystique = charles;
 mystique = apocalipsis;

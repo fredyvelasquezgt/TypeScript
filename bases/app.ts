@@ -19,7 +19,7 @@ const bumblebee:{carroceria:string, modelo: string, antibalas: boolean, pasajero
 
 
 // Villanos debe de ser un arreglo de objetos personalizados
-const villanos = [{
+const villanos: [{}] = [{
   nombre:"Lex Luthor",
   edad: 54,
   mutante:false
@@ -35,18 +35,34 @@ const villanos = [{
 
 // Multiples tipos
 // cree dos tipos, uno para charles y otro para apocalipsis
-const charles = {
+
+type Charles = {
+    poder: string,
+    estatura: number
+}
+
+const charles: Charles = {
   poder:"psiquico",
   estatura: 1.78
 };
 
-const apocalipsis = {
+
+type Apocalipsis = {
+    lider: boolean,
+    miembros: string[]
+}
+
+
+const apocalipsis: Apocalipsis = {
   lider:true,
   miembros: ["Magneto","Tormenta","Psylocke","Angel"]
 }
 
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique;
+let mystique: (Charles | Apocalipsis) = {
+    lider: false,
+    miembros: ['Juan', 'Fredy']
+}
 
 mystique = charles;
 mystique = apocalipsis;
