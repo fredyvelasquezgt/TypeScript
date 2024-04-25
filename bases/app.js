@@ -41,12 +41,6 @@ console.log(apocalipsis);
 let mystique;
 mystique = charles;
 mystique = apocalipsis;
-
-
-
-
-
-
 //TAREA 2
 // Funciones Básicas
 // function sumar( a: number, b:number ): number{
