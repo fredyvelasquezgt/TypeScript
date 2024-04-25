@@ -1,13 +1,13 @@
 
 // Objetos
-const batimovil = {
+const batimovil: {carroceria:string, modelo: string, antibalas: boolean, pasajeros: number} = {
   carroceria: "Negra",
   modelo: "6x6",
   antibalas: true,
   pasajeros:4
 };
 
-const bumblebee = {
+const bumblebee:{carroceria:string, modelo: string, antibalas: boolean, pasajeros: number, disparar:()=>void} = {
   carroceria: "Amarillo con negro",
   modelo: "4x2",
   antibalas: true,
