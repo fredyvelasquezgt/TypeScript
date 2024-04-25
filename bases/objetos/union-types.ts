@@ -3,24 +3,19 @@
     type Hero = {
         name: string,
         age?:number,
-        powers: string[],
+        powers: number[],
         getName?: () => string;
     }
 
-    let flash: Hero = {
-        name: 'Barry Allen',
-        age: 24,
-        powers: ['Super Velocidad', 'Time Travel']
+    let myCustomVariable: (string | number | Hero) = 'Fredy';
+    console.log(myCustomVariable)
+
+    myCustomVariable = {
+        name: 'Bruce',
+        age: 43,
+        powers: [0]
     }
 
-    let superman: Hero = {
-        name: 'Clark Kent',
-        age: 60,
-        powers: ['Super Velocidad', 'Fuerza'],
-        getName() {
-            return this.name;
-        }
-    }
-
+    console.log(typeof myCustomVariable)
 
 })()
