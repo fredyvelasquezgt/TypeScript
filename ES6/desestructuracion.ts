@@ -1,5 +1,5 @@
 (() => {
-
+    //Objects
     type Avengers = {
         nick: string;
         ironman: string;
@@ -22,5 +22,9 @@
     const printAvenger = ({vision, ...resto}:Avengers) => {
         console.log(vision, resto)
     }
+
+    const avengersArr: string[] = ['Cap America', 'Iron Man', 'Hulk']
+    const [, ironman,] = avengersArr;
+    console.log({ironman})
 
 })()
