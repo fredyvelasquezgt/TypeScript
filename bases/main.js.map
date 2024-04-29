@@ -1,1 +1,1 @@
-{"version":3,"file":"main.js","sourceRoot":"","sources":["../classes/basica.ts"],"names":[],"mappings":";AAAA,CAAC,GAAG,EAAE;AAEN,CAAC,CAAC,EAAE,CAAA"}
+{"version":3,"file":"main.js","sourceRoot":"","sources":["../classes/basica.ts"],"names":[],"mappings":";AAAA,CAAC,GAAG,EAAE;IACF,MAAM,OAAO;KAIZ;AACL,CAAC,CAAC,EAAE,CAAA"}
