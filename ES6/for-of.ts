@@ -13,8 +13,15 @@
         weapon: 'Shield'
     }
 
-    const ironman: Avenger = {
-        name: 'Ironman',
-        weapon: 'ArmorSuit'
+    const thor: Avenger = {
+        name: 'Thor',
+        weapon: 'Mjolnir'
     }
+
+    const avengers = [ironman, thor, capAmerica]
+
+    for (const avenger of avengers) {
+        console.log(avenger)
+    }
+
 })()
