@@ -1,5 +1,7 @@
 (() => {
 
+    //inheritance
+
     class Avenger { 
 
         constructor(
@@ -25,13 +27,28 @@
         ) {
             super(name, realName)
             console.log('constructor xmen llamado')
+            
         }
+
+       get fullName() {
+           return `${this.name} - ${this.realName}`
+       }
+
+       set fullName(name: string) {
+           if(name.length < 3) {
+               throw new Error("el nombre debe de ser mayor 3 letras")
+           }
+            this.name = name;
+       }
 
 
     }
 
     const wolverine = new Xmen('Wolverine', 'Logan', true)
-    console.log(wolverine)
+    console.log(wolverine.fullName)
+
+    wolverine.fullName = 'Fredy'
+    console.log(wolverine.fullName)
 
 
 })()
