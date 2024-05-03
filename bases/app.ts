@@ -74,4 +74,8 @@ interface Human {
     - estadoCivil
     - imprimirBio(): void // en consola una breve descripcion.
 */
-class Persona implements Human {}
+class Persona implements Human {
+  constructor(){
+    
+  }
+}
