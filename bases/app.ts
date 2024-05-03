@@ -7,18 +7,17 @@ interface Auto {
 }
 
 // Cree una interfaz para validar el auto (el valor enviado por parametro)
-const conducirBatimovil = ( auto ):void => {
+const conducirBatimovil = ( auto:Auto ):void => {
   auto.encender = true;
   auto.velocidadMaxima = 100;
-  auto.acelear();
+  auto.acelerar();
 }
 
 
-
-const batimovil = {
+const batimovil: Auto = {
   encender:false,
   velocidadMaxima:0,
-  acelear(){
+  acelerar(){
     console.log("...... gogogo!!!");
   }
 }
@@ -26,19 +25,19 @@ const batimovil = {
 // Cree una interfaz con que permita utilzar el siguiente objeto
 // utilizando propiedades opcionales
 
-interface Villano {
+interface Guason {
   reir?: boolean,
   comer?: boolean,
   llorar?:boolean
 }
 
-const guason: Villano = {
+const guason: Guason = {
   reir: true,
   comer:true,
   llorar:false
 }
 
-const reir = ( guason ):void => {
+const reir = ( guason:Guason ):void => {
   if( guason.reir ){
     console.log("JAJAJAJA");
   }
@@ -47,11 +46,11 @@ const reir = ( guason ):void => {
 
 // Cree una interfaz para la siguiente funcion
 
-interface City {
+interface CityFunction {
   (ciudadanos: string[]):number;
 }
 
-const ciudadGotica = ( ciudadanos:string[] ):number => {
+const ciudadGotica: CityFunction = ( ciudadanos:string[] ):number => {
   return ciudadanos.length;
 }
 
@@ -59,9 +58,9 @@ const ciudadGotica = ( ciudadanos:string[] ):number => {
 // con las siguientes propiedades y metodos
 
 interface Human {
-  nombre: string,
   edad: number,
   sexo: string,
+  nombre: string,
   estadoCivil: string,
   imprimirBio(): void
 }
@@ -75,7 +74,12 @@ interface Human {
     - imprimirBio(): void // en consola una breve descripcion.
 */
 class Persona implements Human {
-  constructor(){
+  
+  public edad: number;
+  public sexo: string;
+  public nombre: string;
+  public estadoCivil: string;
+  imprimirBio() {
     
   }
 }
