@@ -1,5 +1,5 @@
 import {Hero as SuperHero} from './classes/Hero'
-import { powers } from './data/powers';
+import powers, {Power} from './data/powers';
 
 
 const ironman = new SuperHero('Ironman', 1, 55)
