@@ -1,12 +1,12 @@
 
 
-class Hero {
+export class Hero {
     constructor(
         public name:string,
-        public powerId: number.
+        public powerId: number,
         public age: number
     )
     {
-        
+
     }
 }
