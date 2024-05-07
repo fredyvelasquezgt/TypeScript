@@ -1,4 +1,4 @@
-import { printObject, genericFuntion } from './generics/generics';
+import { printObject, genericFunction, genericFunctionArrow } from './generics/generics';
 
 
 // printObject(123)
@@ -10,4 +10,6 @@ import { printObject, genericFuntion } from './generics/generics';
 
 // printObject("Hola mundo")
 
-console.log(genericFuntion(123))
+// console.log(genericFunctionArrow(123))
+// console.log(genericFunction('hello world').)
+// console.log(genericFunction(123))
