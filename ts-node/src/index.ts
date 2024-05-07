@@ -1,12 +1,2 @@
-import {Hero as SuperHero} from './classes/Hero'
-import powers, {Power} from './data/powers';
-
-
-const ironman = new SuperHero('Ironman', 1, 55)
-console.log(ironman)
-
-console.log(powers[0])
-
-
-
+import { printObject } from './generics/generics';
 
