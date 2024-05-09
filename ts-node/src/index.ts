@@ -1,16 +1,15 @@
-// import { getPokemon } from './generics/get-pokemon';
+import { Pokemon } from './decorators/pokemon-class';
 
 
 
-// getPokemon(4)
-//     .then(resp => console.log(resp.name))
-//     .catch(err => console.log(err))
-//     .finally(() => console.log('fin de getPokemon'))
+const charmander = new Pokemon('Charmander');
+
+// (Pokemon.prototype as any).customName = 'Pikachu'
+
+// console.log(charmander.savePokemonToDB(50));
+// charmander.savePokemonToDB(10);
+charmander.publicApi = 'https://fernando-herrera.com';
+console.log( charmander )
 
 
-import { Pokemon } from "../decorators/pokemon";
 
-// const charmander = new Pokemon('Charmander')
-// console.log(charmander)
-
-//Pokemon.prototype.customName = 'Pikachu';
