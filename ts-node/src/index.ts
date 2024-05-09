@@ -8,3 +8,7 @@
 //     .finally(() => console.log('fin de getPokemon'))
 
 
+import { Pokemon } from "../decorators/pokemon";
+
+const charmander = new Pokemon('Charmander')
+console.log(charmander)
