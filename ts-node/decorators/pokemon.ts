@@ -13,8 +13,15 @@ const printoToConsoleConditional = (print:booolean = false): Function => {
     }
 }
 
+const bloquearPrototipo = function(constructor: Function) {
+    Object.seal(constructor)
+    Object.seal(constructor.prototype)
+
+}
+
 //class
-@printoToConsoleConditional()
+@bloquearPrototipo
+@printoToConsoleConditional(true)
 export class Pokemon {
 
     public publicApi: string = 'https://pokeapi.co'
