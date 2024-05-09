@@ -5,12 +5,16 @@ function printToConsole(constructor: Function) {
 }
 
 //function that returns function
-const printoToConsoleConditional = () => {
-    return () => console.log('hola mundo')
+const printoToConsoleConditional = (print:booolean = false): Function => {
+    if(print) {
+        return printToConsole;
+    } else {
+        return () => {}
+    }
 }
 
 //class
-@printToConsole
+@printoToConsoleConditional()
 export class Pokemon {
 
     public publicApi: string = 'https://pokeapi.co'
